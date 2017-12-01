@@ -1,0 +1,1163 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+/* Site wrapper to cap screen width so that layout is not distorted*/
+
+div#site-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Fonts and text-styling */
+
+/* cyrillic */
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v12/2NBgzUtEeyB-Xtpr9bm1CRw5vVFbIG7DatP53f3SWfE.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin-ext */
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v12/2NBgzUtEeyB-Xtpr9bm1CSVudZg2I_9CBJalMPResNk.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v12/2NBgzUtEeyB-Xtpr9bm1CRD8Ne_KjP89kA3_zOrHj8E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin-ext */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+/* Oerwrite Bootstrap Link CSS */
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-default {
+  border: 1px solid #212145;
+}
+
+.btn-default:hover {
+  border: 1px solid #212145;
+  color: #fff;
+  background-color: #212145;
+}
+
+/* Navbar */
+
+.navbar {
+  color: #fff;
+}
+
+.nav-item-normal:hover {
+  background: #fff;
+  color: #282627;
+}
+
+.nav-item-inv:hover {
+  background: black;
+  color: #fff;
+}
+
+a.active {
+  background: black;
+  color: #fff;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.sticky .navbar-toggler-icon, .expandedNav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.sticky, .expandedNav {
+  background: rgba(255, 255, 255, 0.9);
+  color: #282627;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+/* Recreation of suprematist composition */
+
+/* Homepage animated splash background image modified for screen sizes */
+
+#splash {
+  background-image: url('../media/splash/splashbg7.jpg');
+  background-position: 50% 10%;
+}
+
+@media (min-height: 600px) {
+  #splash {
+    background-image: url('../media/splash/splashbg6.jpg');
+    background-position: 50% 10%;
+  }
+}
+
+@media (min-height: 700px) {
+  #splash {
+    background-image: url('../media/splash/splashbg6.jpg');
+    background-position: 50% 10%;
+  }
+}
+
+@media (min-height: 800px) {
+  #splash {
+    background-image: url('../media/splash/splashbg5.jpg');
+    background-position: 50% 10%;
+  }
+}
+
+@media (min-height: 900px) {
+  #splash {
+    background-image: url('../media/splash/splashbg4.jpg');
+    background-position: 50% 10%;
+  }
+}
+
+@media (min-height: 1000px) {
+  #splash {
+    background-image: url('../media/splash/splashbg3.jpg');
+    background-position: 50% 10%;
+  }
+}
+
+@media (min-height: 1100px) {
+  #splash {
+    background-image: url('../media/splash/splashbg2.jpg');
+    background-position: 50% 10%;
+  }
+}
+
+@media (min-height: 1200px) {
+  #splash {
+    background-image: url('../media/splash/splashbg.jpg');
+    background-position: 50% 10%;
+  }
+}
+
+/* Recreation of suprematist composition shapes as buttons */
+
+#splash {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 90vh;
+  width: 100vw;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#square {
+  color: #fff;
+  background-color: #212145;
+  position: absolute;
+  -webkit-clip-path: polygon(42% 0, 100% 33%, 62% 95%, 4% 60%);
+  clip-path: polygon(42% 0, 100% 33%, 62% 95%, 4% 60%);
+  z-index: 4;
+  cursor: pointer;
+}
+
+#shadowSquare {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: rgba(0, 0, 0, .5);
+  -webkit-clip-path: polygon(42% 0, 100% 33%, 62% 95%, 4% 60%);
+  clip-path: polygon(42% 0, 100% 33%, 62% 95%, 4% 60%);
+}
+
+#rectangle {
+  background-color: #301B20;
+  position: absolute;
+  z-index: 2;
+}
+
+#shadowRectangle {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: rgba(0, 0, 0, .5);
+}
+
+#rectangle2 {
+  background-color: #48876C;
+  position: absolute;
+  z-index: 5;
+  -webkit-clip-path: polygon(31% 0, 62% 0, 27% 99%, 0 93%);
+  clip-path: polygon(31% 0, 62% 0, 27% 99%, 0 93%);
+}
+
+#shadowRectangle2 {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: rgba(0, 0, 0, .5);
+  -webkit-clip-path: polygon(31% 0, 62% 0, 27% 99%, 0 93%);
+  clip-path: polygon(31% 0, 62% 0, 27% 99%, 0 93%);
+}
+
+/* Modify shapes for screen sizes - mobile */
+
+@media (max-width: 576px) {
+  #square {
+    font-size: 1em;
+    width: 70vw;
+    height: 70vw;
+    top: 28%;
+    left: 25%;
+  }
+  #shadowSquare {
+    width: 70vw;
+    height: 70vw;
+    top: 30%;
+    left: 26%;
+  }
+  #rectangle {
+    width: 80vw;
+    height: 20vw;
+    top: 65%;
+    left: 5%;
+  }
+  #shadowRectangle {
+    width: 80vw;
+    height: 20vw;
+    top: 66%;
+    left: 6%;
+  }
+  #rectangle2 {
+    width: 90vw;
+    height: 80vw;
+    top: -10%;
+    left: 10%;
+  }
+  #shadowRectangle2 {
+    width: 90vw;
+    height: 80vw;
+    top: -9%;
+    left: 11%;
+  }
+}
+
+/* Modify shapes for screen sizes - ipad */
+
+@media (min-width: 576px) {
+  #splash {
+    height: 90vh;
+    width: 100vw;
+  }
+  #square {
+    width: 50vw;
+    height: 50vw;
+    top: 16%;
+    left: 35%;
+  }
+  #shadowSquare {
+    width: 50vw;
+    height: 50vw;
+    top: 18%;
+    left: 36%;
+  }
+  #rectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 75%;
+    left: 5%;
+  }
+  #shadowRectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 76%;
+    left: 6%;
+  }
+  #rectangle2 {
+    width: 50vw;
+    height: 40vw;
+    top: -10%;
+    left: 15%;
+  }
+  #shadowRectangle2 {
+    width: 50vw;
+    height: 40vw;
+    top: -9%;
+    left: 16%;
+  }
+}
+
+/* Modify shapes for screen sizes - large ipad */
+
+@media (min-width: 768px) {
+  #square {
+    width: 50vw;
+    height: 50vw;
+    top: 16%;
+    left: 32%;
+  }
+  #shadowSquare {
+    width: 50vw;
+    height: 50vw;
+    top: 18%;
+    left: 33%;
+  }
+  #rectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 75%;
+    left: 5%;
+  }
+  #shadowRectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 76%;
+    left: 6%;
+  }
+  #rectangle2 {
+    width: 50vw;
+    height: 40vw;
+    top: -10%;
+    left: 15%;
+  }
+  #shadowRectangle2 {
+    width: 50vw;
+    height: 40vw;
+    top: -9%;
+    left: 16%;
+  }
+}
+
+/* Modify shapes for screen sizes - laptop */
+
+@media (min-width: 992px) {
+  #square {
+    width: 50vw;
+    height: 50vw;
+    top: 16%;
+    left: 32%;
+  }
+  #shadowSquare {
+    width: 50vw;
+    height: 50vw;
+    top: 18%;
+    left: 33%;
+  }
+  #rectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 75%;
+    left: 5%;
+  }
+  #shadowRectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 76%;
+    left: 6%;
+  }
+  #rectangle2 {
+    width: 50vw;
+    height: 40vw;
+    top: -10%;
+    left: 15%;
+  }
+  #shadowRectangle2 {
+    width: 50vw;
+    height: 40vw;
+    top: -9%;
+    left: 16%;
+  }
+}
+
+/* Modify shapes for screen sizes - ipad landscape */
+
+@media (min-height: 415px) and (min-width: 415px) and (orientation: landscape) {
+  #square {
+    width: 40vw;
+    height: 40vw;
+    top: 7%;
+    left: 40%;
+  }
+  #shadowSquare {
+    width: 40vw;
+    height: 40vw;
+    top: 9%;
+    left: 41%;
+  }
+  #rectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 60%;
+    left: 5%;
+  }
+  #shadowRectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 61%;
+    left: 6%;
+  }
+  #rectangle2 {
+    width: 50vw;
+    height: 26vw;
+    top: -10%;
+    left: 22%;
+  }
+  #shadowRectangle2 {
+    width: 50vw;
+    height: 26vw;
+    top: -9%;
+    left: 23%;
+  }
+}
+
+/* Modify shapes for screen sizes - ipad portrait */
+
+@media (min-width: 767px) and (orientation: portrait) {
+  #square {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    top: 24%;
+    left: 32%;
+  }
+  #shadowSquare {
+    width: 50vw;
+    height: 50vw;
+    top: 26%;
+    left: 33%;
+  }
+  #rectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 60%;
+    left: 5%;
+  }
+  #shadowRectangle {
+    width: 80vw;
+    height: 10vw;
+    top: 61%;
+    left: 6%;
+  }
+  #rectangle2 {
+    width: 50vw;
+    height: 60vw;
+    top: -10%;
+    left: 22%;
+  }
+  #shadowRectangle2 {
+    width: 50vw;
+    height: 60vw;
+    top: -9%;
+    left: 23%;
+  }
+}
+
+/* Modify shapes for screen sizes - large screens */
+
+@media (min-width: 1200px) {
+  #splash {
+    height: 80vh;
+    max-width: 1440px;
+  }
+  #square {
+    width: 50vw;
+    height: 50vw;
+    max-height: 700px;
+    max-width: 700px;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+  }
+  #shadowSquare {
+    width: 50vw;
+    height: 50vw;
+    max-height: 700px;
+    max-width: 700px;
+    top: 7%;
+    left: 41%;
+  }
+  #rectangle {
+    width: 80vw;
+    height: 10vw;
+    max-width: 1200px;
+    top: 75%;
+    left: 5%;
+  }
+  #shadowRectangle {
+    width: 80vw;
+    height: 10vw;
+    max-width: 1200px;
+    top: 76%;
+    left: 6%;
+  }
+  #rectangle2 {
+    width: 50vw;
+    height: 36vw;
+    max-height: 500px;
+    top: -10%;
+    left: 15%;
+  }
+  #shadowRectangle2 {
+    width: 50vw;
+    height: 36vw;
+    max-height: 500px;
+    top: -9%;
+    left: 16%;
+  }
+}
+
+/* splash button format */
+
+.btn::after {
+  content: "\f054";
+  font-family: FontAwesome;
+  padding-left: 25px;
+  font-size: 0.6em;
+  position: relative;
+  top: -1px;
+}
+
+.btn-wrapper, .btn-wrapper2, .btn-wrapper3 {
+  position: absolute;
+}
+
+.btn-splash, .btn-splash2, .btn-splash3 {
+  position: relative;
+  background-color: transparent;
+  font-size: 3vw;
+}
+
+.btn-wrapper {
+  top: 45%;
+  left: 50%;
+}
+
+.btn-splash {
+  left: -50%;
+  color: #F5F1EE;
+}
+
+.btn-wrapper2 {
+  top: 75%;
+  left: 35%;
+}
+
+.btn-splash2 {
+  left: -120%;
+  color: #F5F1EE;
+}
+
+.btn-wrapper3 {
+  top: 20%;
+  left: 25%;
+}
+
+.btn-splash3 {
+  left: 0%;
+  color: #F5F1EE;
+}
+
+/* transform splash shapes on hover */
+
+#square:hover, #rectangle2:hover, #rectangle:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+#square, #rectangle2, #rectangle {
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+}
+
+/*Slide in Animation https://stackoverflow.com/questions/34159490/slide-in-from-left-css-animation*/
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-900px);
+    transform: translateX(-900px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(+900px);
+    transform: translateX(+900px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* two shapes and shadows slide in from left */
+
+#rectangle2, #rectangle, #shadowRectangle2, #shadowRectangle {
+  -webkit-animation: slideIn 2s none;
+  animation: slideIn 2s none;
+}
+
+/* one shape and shadow slide in from right */
+
+#square, #shadowSquare {
+  -webkit-animation: slideInRight 2s none;
+  animation: slideInRight 2s none;
+}
+
+/* Fade in overlay to increase visibility of navbar */
+
+#overlay {
+  position: absolute;
+  z-index: -99;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+@-webkit-keyframes fadeOverlay {
+  0% {
+    background: rgba(0, 0, 0, 0.0);
+  }
+  10% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  20% {
+    background: rgba(0, 0, 0, 0.04);
+  }
+  30% {
+    background: rgba(0, 0, 0, 0.06);
+  }
+  40% {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.10);
+  }
+  60% {
+    background: rgba(0, 0, 0, 0.12);
+  }
+  70% {
+    background: rgba(0, 0, 0, 0.14);
+  }
+  80% {
+    background: rgba(0, 0, 0, 0.16);
+  }
+  90% {
+    background: rgba(0, 0, 0, 0.18);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes fadeOverlay {
+  0% {
+    background: rgba(0, 0, 0, 0.0);
+  }
+  10% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  20% {
+    background: rgba(0, 0, 0, 0.04);
+  }
+  30% {
+    background: rgba(0, 0, 0, 0.06);
+  }
+  40% {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.10);
+  }
+  60% {
+    background: rgba(0, 0, 0, 0.12);
+  }
+  70% {
+    background: rgba(0, 0, 0, 0.14);
+  }
+  80% {
+    background: rgba(0, 0, 0, 0.16);
+  }
+  90% {
+    background: rgba(0, 0, 0, 0.18);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+#overlay {
+  -webkit-animation-name: fadeOverlay;
+  animation-name: fadeOverlay;
+  -webkit-animation-duration: 3000ms;
+  animation-duration: 3000ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+/* Warn and block for mobiles in landscape */
+
+#portrait-warn {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  color: #fff;
+  text-align: center;
+}
+
+#portrait-warn p {
+  position: relative;
+  -webkit-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  transform: translateY(150%);
+}
+
+@media (max-height: 415px) and (orientation: landscape) {
+  #portrait-warn {
+    display: block;
+  }
+}
+
+/* fixed body background for life,works and more pages */
+
+@media (orientation: portrait) {
+  #background {
+    position: fixed;
+    background-image: url('../media/splash/splashbg-original.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+}
+
+@media (orientation: landscape) {
+  #background {
+    position: fixed;
+    background-image: url('../media/splash/splashbg-landscape.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+}
+
+/* Splash for headings of content pages */
+
+#splash2 {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  color: #fff;
+  display: table;
+  table-layout: fixed;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#splash2 div.container {
+  display: table;
+  height: 100%;
+}
+
+#splash2 div.row {
+  display: table-row;
+}
+
+#splash2 div.container article {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#splash2 .blockquote-footer {
+  color: #F5F1EE;
+}
+
+.more-container, .life-container, .masonry {
+  margin-top: 50px;
+}
+
+/* life page content layout and formatting */
+
+section.content-row h3 {
+  margin: 1em 0;
+  text-align: center;
+}
+
+section.content-row p {
+  margin: 0 10px;
+}
+
+section.content-row p::first-letter {
+  font-size: 2em;
+}
+
+section.content-row img {
+  margin: 0 10px;
+  width: 30%;
+}
+
+section.content-row {
+  padding: 30px 0;
+}
+
+/* Clip path content layout modified for screen widths */
+
+@media (max-width: 350px) {
+  section.content-row:nth-child(even) {
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+    clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+  }
+  section.content-row:nth-child(odd) {
+    -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 99%);
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 99%);
+  }
+  section.content-row:last-child {
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+  }
+  section.content-row:first-child {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 99%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 99%);
+  }
+}
+
+@media (max-width: 410px) and (min-width: 350px) {
+  section.content-row:nth-child(even) {
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+    clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+  }
+  section.content-row:nth-child(odd) {
+    -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 99%);
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 99%);
+  }
+  section.content-row:last-child {
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+  }
+  section.content-row:first-child {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 99%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 99%);
+  }
+}
+
+@media (max-width: 767px) and (min-width: 410px) {
+  section.content-row:nth-child(even) {
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+    clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+  }
+  section.content-row:nth-child(odd) {
+    -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 99%);
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 99%);
+  }
+  section.content-row:last-child {
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+  }
+  section.content-row:first-child {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 99%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 99%);
+  }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+  section.content-row:nth-child(even) {
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%);
+    clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%);
+  }
+  section.content-row:nth-child(odd) {
+    -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
+  }
+  section.content-row:first-child {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%);
+  }
+  section.content-row:last-child {
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  section.content-row:nth-child(even) {
+    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+  }
+  section.content-row:nth-child(odd) {
+    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
+  }
+  section.content-row:first-child {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 96%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 96%);
+  }
+  section.content-row:last-child {
+    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+  }
+}
+
+@media (min-width: 1200px) {
+  section.content-row:nth-child(even) {
+    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+  }
+  section.content-row:nth-child(odd) {
+    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
+  }
+  section.content-row:first-child {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 96%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 96%);
+  }
+  section.content-row:last-child {
+    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+  }
+}
+
+/* Life content sticky scrollspy nav */
+
+.sticky-spy {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 90px;
+  height: 50vh;
+}
+
+.sticky-spy .nav-item {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.sticky-spy .nav-item:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* works section masonry grid gallery */
+
+/* http://w3bits.com/flexbox-masonry/ */
+
+/* reduce text to maintain consistent layour */
+
+@media (max-width:767px) {
+  .masonry .text-item h3 {
+    font-size: 0.6em;
+  }
+}
+
+.masonry {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1em;
+  column-gap: 1em;
+}
+
+.masonry .gallery-item {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  cursor: pointer;
+}
+
+.masonry .text-item {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  min-height: 100px;
+}
+
+.masonry .text-item h3 {
+  line-height: 100px;
+}
+
+/* Modal CSS Overwrite */
+
+.modal-content {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+button.closeCustom {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  color: #fff;
+}
+
+/* 'more' page content layout */
+
+section.more-section {
+  margin: 5px 0;
+}
+
+section.more-section img {
+  max-width: 95%;
+  margin: 5px;
+}
+
+.more-title {
+  min-height: 100px;
+}
+
+.more-title h3 {
+  line-height: 100px;
+}
+
+.more-body {
+  background-color: #fff;
+  padding: 10px;
+}
+
+table {
+  margin: auto;
+}
+
+/*footer*/
+
+p.copyright {
+  font-size: 0.6em;
+}
+
+.page-footer {
+  padding-top: 20px;
+}
+
+/* bckground colours */
+
+.blue {
+  background-color: #212145;
+  color: #fff;
+}
+
+.red {
+  background-color: #301B20;
+  color: #fff;
+}
+
+.orange {
+  background-color: #AB4415;
+  color: #fff;
+}
+
+.gold {
+  background-color: #DBB50A;
+  color: #fff;
+}
+
+.black {
+  background-color: #282627;
+  color: #fff;
+}
+
+.green {
+  background-color: #48876C;
+  color: #fff;
+}
+
+.canvas-white {
+  background-color: #F5F1EE;
+}
+
+.transparent {
+  background-color: transparent;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Malevich</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- From Bootstrap blank template html https://v4-alpha.getbootstrap.com/examples/ -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- favicon generated from https://www.favicon-generator.org/-->
+  <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- for landscape mobile screens -->
+  <div id="portrait-warn">
+    <p>Please Rotate Phone to Portrait <br /><i class="fa fa-rotate-right fa-5x" aria-hidden="true"></i> <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+      <p>
+  </div>
+
+  <!-- fixed background -->
+  <div id="background"></div>
+
+  <!-- to cap screen width to maintain consistent presentation -->
+  <div id="site-wrapper">
+    <header>
+      <!-- collapsible, fixed navbar from bootstrap -->
+      <nav class="navbar navbar-toggleable-md fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="nav-link" href="index.html"><h1 class="navbar-brand">Malevich</h1></a>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="life.html">Life</a>
+            </li>
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="works.html">Works</a>
+            </li>
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="more.html">More</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="splash2">
+      <div class="container">
+        <article>
+          <h2>Works</h2>
+          <div class="hidden-md-down">
+            <blockquote class="blockquote">“Aestheticism is the garbage of intuitive feeling.” </blockquote>
+            <footer class="blockquote-footer">Kazimir Malevich</footer>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- CSS Masonry Grid Gallery http://w3bits.com/css-masonry/ -->
+    <div class="container-fluid masonry">
+
+      <div class="text-item text-center green">
+        <h3> Cubism </h3>
+      </div>
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal1.jpg" data-imgsrc="media/mal1.jpg" alt="An Englishman in Moscow (1914)" data-title="An Englishman in Moscow (1914)" class="gallery-item" srcset="media/mini/mal1.jpg 200w, media/mini1/mal1.jpg 150w, media/mini2/mal1.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal2.jpg" data-imgsrc="media/mal2.jpg" alt="The Knifegrinder (1912)" data-title="The Knifegrinder (1912)" class="gallery-item" srcset="media/mini/mal2.jpg 200w, media/mini1/mal2.jpg 150w, media/mini2/mal2.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal3.jpg" data-imgsrc="media/mal3.jpg" alt="Woodcutter (1912)" data-title="Woodcutter (1912)" class="gallery-item" srcset="media/mini/mal3.jpg 200w, media/mini1/mal3.jpg 150w, media/mini2/mal3.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal3a.jpg" data-imgsrc="media/mal3a.jpg" alt="Morning in the Village After Snowstorm (1913)" data-title="Morning in the Village After Snowstorm (1913)" class="gallery-item" srcset="media/mini/mal3a.jpg 200w, media/mini1/mal3a.jpg 150w, media/mini2/mal3a.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal3b.jpg" data-imgsrc="media/mal3b.jpg" alt="Head of a Peasant Girl (1913)" data-title="Head of a Peasant Girl (1913)" class="gallery-item" srcset="media/mini/mal3b.jpg 200w, media/mini1/mal3b.jpg 150w, media/mini2/mal3b.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <div class="text-item text-center black">
+        <h3> Suprematism </h3>
+      </div>
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal4.jpg" data-imgsrc="media/mal4.jpg" alt="White on White (1918)" data-title="White on White (1918)" class="gallery-item" srcset="media/mini/mal4.jpg 200w, media/mini1/mal4.jpg 150w, media/mini2/mal4.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal5.jpg" data-imgsrc="media/mal5.jpg" alt="Black Square (1915)" data-title="Black Square (1915)" class="gallery-item" srcset="media/mini/mal5.jpg 200w, media/mini1/mal5.jpg 150w, media/mini2/mal5.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal6.jpg" data-imgsrc="media/mal6.jpg" alt="Red Square (1915)" data-title="Red Square (1915)" class="gallery-item" srcset="media/mini/mal6.jpg 200w, media/mini1/mal6.jpg 150w, media/mini2/mal6.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal6a.jpg" data-imgsrc="media/mal6a.jpg" alt="Black Cross (1923)" data-title="Black Cross (1923)" class="gallery-item" srcset="media/mini/mal6a.jpg 200w, media/mini1/mal6a.jpg 150w, media/mini2/mal6a.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal6b.jpg" data-imgsrc="media/mal6b.jpg" alt="Black Circle (1923)" data-title="Black Circle (1923)" class="gallery-item" srcset="media/mini/mal6b.jpg 200w, media/mini1/mal6b.jpg 150w, media/mini2/mal6b.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <div class="text-item text-center gold">
+        <h3> Compositions </h3>
+      </div>
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal7.jpg" data-imgsrc="media/mal7.jpg" alt="Suprematist Composition (1916)" data-title="Suprematist Composition (1916)" class="gallery-item" srcset="media/mini/mal7.jpg 200w, media/mini1/mal7.jpg 150w, media/mini2/mal7.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal8.jpg" data-imgsrc="media/mal8.jpg" alt="Dynamic Suprematism (1916)" data-title="Dynamic Suprematism (1916)" class="gallery-item" srcset="media/mini/mal8.jpg 200w, media/mini1/mal8.jpg 150w, media/mini2/mal8.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal9.jpg" data-imgsrc="media/mal9.jpg" alt="Suprematist Composition (1915)" data-title="Suprematist Composition (1915)" class="gallery-item" srcset="media/mini/mal9.jpg 200w, media/mini1/mal9.jpg 150w, media/mini2/mal9.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal9a.jpg" data-imgsrc="media/mal9a.jpg" alt="Suprematist Painting, Eight Red Rectangles (1915)" data-title="Suprematist Painting, Eight Red Rectangles (1915)" class="gallery-item" srcset="media/mini/mal9a.jpg 200w, media/mini1/mal9a.jpg 150w, media/mini2/mal9a.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal9b.jpg" data-imgsrc="media/mal9b.jpg" alt="Supremus No.58 Yellow and Black (1916)" data-title="Supremus No.58 Yellow and Black (1916)" class="gallery-item" srcset="media/mini/mal9b.jpg 200w, media/mini1/mal9b.jpg 150w, media/mini2/mal9b.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <div class="text-item text-center red">
+        <h3> Impressionism </h3>
+      </div>
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal10.jpg" data-imgsrc="media/mal10.jpg" alt="Woman Torso (1932)" data-title="Woman Torso (1932)" class="gallery-item" srcset="media/mini/mal10.jpg 200w, media/mini1/mal10.jpg 150w, media/mini2/mal10.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal11.jpg" data-imgsrc="media/mal11.jpg" alt="Woman with Rake (1932)" data-title="Woman with Rake (1932)" class="gallery-item" srcset="media/mini/mal11.jpg 200w, media/mini1/mal11.jpg 150w, media/mini2/mal11.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal12.jpg" data-imgsrc="media/mal12.jpg" alt="Girls in the Fields (1932)" data-title="Girls in the Fields (1932)" class="gallery-item" srcset="media/mini/mal12.jpg 200w, media/mini1/mal12.jpg 150w, media/mini2/mal12.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal12a.jpg" data-imgsrc="media/mal12a.jpg" alt="The Lady at the Piano (1913)" data-title="The Lady at the Piano (1913)" class="gallery-item" srcset="media/mini/mal12a.jpg 200w, media/mini1/mal12a.jpg 150w, media/mini2/mal12a.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+      <img data-toggle="modal" data-target="#imagemodal" src="media/mal12b.jpg" data-imgsrc="media/mal12b.jpg" alt="Red Cavalry (1932)" data-title="Red Cavalry (1932)" class="gallery-item" srcset="media/mini/mal12b.jpg 200w, media/mini1/mal12b.jpg 150w, media/mini2/mal12b.jpg 100w"
+        sizes="(max-width: 470px) 100px, (min-width: 470px) and (max-width: 766px) 150px, (min-width: 766px) 200px" />
+
+    </div>
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 text-center">
+          </div>
+          <div class="col-8 text-right">
+            <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Diego Shot First </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- to avoid tether.io warning -->
+  <script>
+    window.Tether = {};
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Nav Bar Class Change on Scroll -->
+  <script src="js/scroller.js"></script>
+  <!-- Modal Images Gallery -->
+  <script src="js/modal.js"></script>
+
+
+  <!-- The bootstrap modal where the image will appear https://stackoverflow.com/questions/25023199/bootstrap-open-image-in-modal-->
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalLabel">An Englishman in Moscow (1914)</h4>
+          <button type="button" class="closeCustom" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+          <img src="media/mal1.jpg" alt="Image Viewer" id="imagePresent" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

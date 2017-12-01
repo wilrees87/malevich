@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Malevich</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- From Bootstrap blank template html https://v4-alpha.getbootstrap.com/examples/ -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- favicon generated from https://www.favicon-generator.org/-->
+  <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-life" data-offset="40">
+  <!-- for landscape mobile screens -->
+  <div id="portrait-warn">
+    <p>Please Rotate Phone to Portrait <br /><i class="fa fa-rotate-right fa-5x" aria-hidden="true"></i> <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+      <p>
+  </div>
+
+  <!-- fixed background -->
+  <div id="background"></div>
+
+  <!-- to cap screen width to maintain consistent presentation -->
+  <div id="site-wrapper">
+    <header>
+      <!-- collapsible, fixed navbar from bootstrap -->
+      <nav class="navbar navbar-toggleable-md fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="nav-link" href="index.html"><h1 class="navbar-brand">Malevich</h1></a>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="life.html">Life</a>
+            </li>
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="works.html">Works</a>
+            </li>
+            <li class="nav-item nav-item-normal">
+              <a class="nav-link" href="more.html">More</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mini-splash to introduce and header new page content -->
+    <div id="splash2">
+      <div class="container">
+        <article>
+          <h2>Life</h2>
+          <div class="hidden-md-down">
+            <blockquote class="blockquote">“Man, as a form, bears within him the eternal principle of being, and by economic movement along his endless path his form is also transformed, just as everything that lives in nature was transformed in him.”</blockquote>
+            <footer class="blockquote-footer">Kazimir Malevich</footer>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="container-fluid life-container">
+      <div class="row">
+
+        <!-- life content nav menu (with bootstrap4 scrollspy) -->
+        <div class="col-md-3 hidden-sm-down" id="navbar-life">
+          <ul class="nav flex-column sticky-spy">
+            <li class="nav-item">
+              <a class="nav-link" href="#early">Early Life</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cubism">Futuro-Cubism</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#suprematism">Suprematism</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#later">Legacy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- life content -->
+        <div class="col-12 col-sm-12 col-md-9">
+          <section id="early" class="content-row gold">
+            <h3>The Early Life of Malevich</h3>
+            <img class="rounded-circle pull-left" alt="Portrait of Malevich" src="media/artist.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo nostrum istius generis asotos iucunde putat vivere. In qua quid est boni praeter summam voluptatem, et eam sempiternam? Aliter enim nosmet ipsos nosse non possumus. Quid, cum fictas
+              fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus? Duo Reges: constructio interrete. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Quae in controversiam veniunt, de iis, si placet,
+              disseramus. Idemque diviserunt naturam hominis in animum et corpus. Quia nec honesto quic quam honestius nec turpi turpius. Iubet igitur nos Pythius Apollo noscere nosmet ipsos. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              Sed venio ad inconstantiae crimen, ne saepius dicas me aberrare; Equidem e Cn. Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Nunc haec primum fortasse audientis servire debemus. Sin tantum modo ad
+              indicia veteris memoriae cognoscenda, curiosorum. Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Et ille ridens: Video, inquit,
+              quid agas; Quod si ita se habeat, non possit beatam praestare vitam sapientia. Tum Torquatus: Prorsus, inquit, assentior; At quicum ioca seria, ut dicitur, quicum arcana, quicum occulta omnia? Expressa vero in iis aetatibus, quae iam confirmatae
+              sunt. Quodcumque in mentem incideret, et quodcumque tamquam occurreret.</p>
+          </section>
+          <section id="cubism" class="content-row green">
+            <h3>Futuro Cubism</h3>
+            <img class="pull-right" alt="Futuro Cubism" src="media/futuro-cubism.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo nostrum istius generis asotos iucunde putat vivere. In qua quid est boni praeter summam voluptatem, et eam sempiternam? Aliter enim nosmet ipsos nosse non possumus. Quid, cum fictas
+              fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus? Duo Reges: constructio interrete. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Quae in controversiam veniunt, de iis, si placet,
+              disseramus. Idemque diviserunt naturam hominis in animum et corpus. Quia nec honesto quic quam honestius nec turpi turpius. Iubet igitur nos Pythius Apollo noscere nosmet ipsos. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              Sed venio ad inconstantiae crimen, ne saepius dicas me aberrare; Equidem e Cn. Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Nunc haec primum fortasse audientis servire debemus. Sin tantum modo ad
+              indicia veteris memoriae cognoscenda, curiosorum. Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Et ille ridens: Video, inquit,
+              quid agas; Quod si ita se habeat, non possit beatam praestare vitam sapientia. Tum Torquatus: Prorsus, inquit, assentior; At quicum ioca seria, ut dicitur, quicum arcana, quicum occulta omnia? Expressa vero in iis aetatibus, quae iam confirmatae
+              sunt. Quodcumque in mentem incideret, et quodcumque tamquam occurreret.</p>
+          </section>
+          <section id="suprematism" class="content-row canvas-white">
+            <h3>Suprematism</h3>
+            <img class="pull-left" alt="Suprematism" src="media/suprematism.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo nostrum istius generis asotos iucunde putat vivere. In qua quid est boni praeter summam voluptatem, et eam sempiternam? Aliter enim nosmet ipsos nosse non possumus. Quid, cum fictas
+              fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus? Duo Reges: constructio interrete. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Quae in controversiam veniunt, de iis, si placet,
+              disseramus. Idemque diviserunt naturam hominis in animum et corpus. Quia nec honesto quic quam honestius nec turpi turpius. Iubet igitur nos Pythius Apollo noscere nosmet ipsos. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              Sed venio ad inconstantiae crimen, ne saepius dicas me aberrare; Equidem e Cn. Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Nunc haec primum fortasse audientis servire debemus. Sin tantum modo ad
+              indicia veteris memoriae cognoscenda, curiosorum. Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Et ille ridens: Video, inquit,
+              quid agas; Quod si ita se habeat, non possit beatam praestare vitam sapientia. Tum Torquatus: Prorsus, inquit, assentior; At quicum ioca seria, ut dicitur, quicum arcana, quicum occulta omnia? Expressa vero in iis aetatibus, quae iam confirmatae
+              sunt. Quodcumque in mentem incideret, et quodcumque tamquam occurreret.</p>
+          </section>
+          <section id="later" class="content-row blue">
+            <h3>Legacy</h3>
+            <img class="pull-left" alt="Death of Malevich" src="media/later.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo nostrum istius generis asotos iucunde putat vivere. In qua quid est boni praeter summam voluptatem, et eam sempiternam? Aliter enim nosmet ipsos nosse non possumus. Quid, cum fictas
+              fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus? Duo Reges: constructio interrete. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Quae in controversiam veniunt, de iis, si placet,
+              disseramus. Idemque diviserunt naturam hominis in animum et corpus. Quia nec honesto quic quam honestius nec turpi turpius. Iubet igitur nos Pythius Apollo noscere nosmet ipsos. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              Sed venio ad inconstantiae crimen, ne saepius dicas me aberrare; Equidem e Cn. Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Nunc haec primum fortasse audientis servire debemus. Sin tantum modo ad
+              indicia veteris memoriae cognoscenda, curiosorum. Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Et ille ridens: Video, inquit,
+              quid agas; Quod si ita se habeat, non possit beatam praestare vitam sapientia. Tum Torquatus: Prorsus, inquit, assentior; At quicum ioca seria, ut dicitur, quicum arcana, quicum occulta omnia? Expressa vero in iis aetatibus, quae iam confirmatae
+              sunt. Quodcumque in mentem incideret, et quodcumque tamquam occurreret.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 text-center">
+          </div>
+          <div class="col-8 text-right">
+            <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Diego Shot First </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- to avoid tether.io warning -->
+  <script>
+    window.Tether = {};
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Nav Bar Class Change on Scroll -->
+  <script src="js/scroller.js"></script>
+
+</body>
+
+</html>
